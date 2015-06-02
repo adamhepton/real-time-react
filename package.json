@@ -1,0 +1,30 @@
+{
+  "name": "real-time-react",
+  "version": "0.0.1",
+  "description": "Splicing real-time comms into react",
+  "author": "Adam Hepton <adam@hepton.org>",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/adamhepton/real-time-react.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "classnames": "^2.1.2",
+    "express": "^4.2.0",
+    "fluxxor": "^1.5.4",
+    "keymirror": "^0.1.1",
+    "node-libs-browser": "^0.5.2",
+    "primus": "^3.0.2",
+    "webpack": "^1.9.10",
+    "ws": "^0.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-webpack": "^1.4.0",
+    "jsx-loader": "^0.13.2",
+    "react-tools": "^0.13.3"
+  },
+  "private": true,
+  "license": "MIT"
+}
