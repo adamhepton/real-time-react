@@ -6,7 +6,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/adamhepton/real-time-react.git"
+    "url": "https://github.com/adamhepton/real-time-react.git"
   },
   "dependencies": {
     "body-parser": "^1.12.4",
@@ -26,6 +26,5 @@
     "react-tools": "^0.13.3",
     "webpack": "^1.9.10"
   },
-  "private": true,
   "license": "MIT"
 }
