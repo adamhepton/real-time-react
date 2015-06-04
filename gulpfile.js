@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
     webpack = require('gulp-webpack'),
+    nodemon = require('gulp-nodemon'),
     webpackConfig = require('./webpack.config.js');
 
 gulp.task('build', function() {
@@ -12,15 +13,12 @@ gulp.task('build', function() {
       .pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('watch', function() {
-    gulp.watch([
-      './react/init.js',
-      './react/components/**/*',
-      './react/stores/**/*',
-      './react/actions/**/*',
-      './react/utils/**/*',
-      './react/constants/**/*'
-    ], ['build']);
+gulp.task('nodemon', function() {
+  nodemon({
+    script: 'app.js',
+    ignore: ['public/*', 'node_modules/*'],
+    ext: 'js'
+  });
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', [ 'nodemon', 'build' ]);

@@ -16,14 +16,15 @@
     "keymirror": "^0.1.1",
     "node-libs-browser": "^0.5.2",
     "primus": "^3.0.2",
-    "webpack": "^1.9.10",
     "ws": "^0.7.1"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-nodemon": "^2.0.3",
     "gulp-webpack": "^1.4.0",
     "jsx-loader": "^0.13.2",
-    "react-tools": "^0.13.3"
+    "react-tools": "^0.13.3",
+    "webpack": "^1.9.10"
   },
   "private": true,
   "license": "MIT"

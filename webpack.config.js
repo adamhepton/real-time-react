@@ -1,13 +1,11 @@
-var path = require('path'),
-    webpack = require('webpack');
-
 module.exports = {
     cache: {},
+    watch: true,
     entry: {
       realTimeReact: ["./react/init.jsx"]
     },
     output: {
-      path: path.join(__dirname, '/', 'public/js'),
+      path: require('path').join(__dirname, '/', 'public/js'),
       filename: "bundle.js",
       chunkFilename: "[chunkhash].js",
       library: "realTimeReact",
